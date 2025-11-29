@@ -1,16 +1,12 @@
 """
-Taking two numbers from users to do mathematical operation like
-Addition, Subtraction, Multiplication and Division
+Showing the number given
+by the user is an even or odd
 """
-num1=int(input("Enter first number:"))
-num2=int(input("Enter second number:"))
 
-Addition=num1 + num2
-Subtraction=num1-num2
-Multiplication=num1*num2
-Division=num1//num2
+number = int(input("Enter a number:"))
 
-print("Addition:",Addition)
-print("Subtraction:",Subtraction)
-print("Multiplication:",Multiplication)
-print("Division:",Division)
+if number % 2 ==0:
+    result = "Even"
+else:
+    result = "Odd"
+print(f"{number} is an {result}")
