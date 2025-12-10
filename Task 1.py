@@ -1,12 +1,12 @@
-"""
-Showing the number given
-by the user is an even or odd
-"""
+# Function to calculate factorial using a loop
+def factorial(n):
+    result = 1
+    for i in range(1,n+1):
+        result *= i
+    return result
 
-number = int(input("Enter a number:"))
+# Ask user for a number
+num = int(input("Enter a number:"))
 
-if number % 2 ==0:
-    result = "Even"
-else:
-    result = "Odd"
-print(f"{number} is an {result}")
+# Calculate and print  factorial
+print(f"Factorial of {num} is {factorial(num)}")
