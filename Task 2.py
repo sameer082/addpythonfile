@@ -1,10 +1,24 @@
-"""
-Adding the numbers
-from 1 to 50 , and showing the result
-for total sum
-"""
+# Here we get the problem to make a file and over writing the file
 
-total_sum = 0
-for number in range(1, 51):
-    total_sum += number
-print("The sum of numbers from 1 to 51 is :", total_sum)
+text = input("Enter text to write to the file:")
+
+file =open("output.txt" ,"w")
+file.write(text + "\n")
+file.close()
+
+print("Data successfully written to output.txt")
+
+more_text = input("Enter additional text to append: ")
+
+file = open("output.txt", "a")
+file.write(more_text + "\n")
+file.close()
+
+print("Data successfully appended.")
+
+file = open("output.txt" ,"r")
+content = file.read()
+file.close()
+print("\nFinal content of output.txt:")
+
+print(content)
