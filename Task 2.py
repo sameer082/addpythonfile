@@ -1,8 +1,10 @@
-"""Well coming the new users to python coding class
-,by question their full name"""
+"""
+Adding the numbers
+from 1 to 50 , and showing the result
+for total sum
+"""
 
-First_name =input("Enter your first name:")
-Last_name=input("Enter your last name:")
-add=First_name+" "+Last_name
-
-print("Hello",",",add,"Wellcome to python program class here we are learning python.")
+total_sum = 0
+for number in range(1, 51):
+    total_sum += number
+print("The sum of numbers from 1 to 51 is :", total_sum)
